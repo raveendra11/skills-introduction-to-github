@@ -1,16 +1,43 @@
-git status      - To see which branch you are on, changes you made on existing files and new files added(as untracked files). 
-  cmd :
-    git status  
+## Git Commands
 
-git add         - To add new files/changed files to staging area.  
-  cmd :
-    git add filename.txt 
-    git add .  
+| Command | Description |
+|---------|-------------|
+| `git status` | Displays the current branch, modified files, staged files, and untracked files. |
 
+**Syntax:**
+```bash
+git status
+```
 
-git restore     - To discard uncommitted changes in all files/specific file, unstage a file, recover a deleted file, restore a file from a specific commit.
-  cmd :
-    git restore .
-    git restore --staged filename.txt
-    git restore filename.txt
-    git restore --source=<commit_hash_or_branch> filename.txt
+---
+
+| Command | Description |
+|---------|-------------|
+| `git add` | Adds new or modified files to the staging area before committing. |
+
+**Syntax:**
+```bash
+git add filename.txt
+git add .
+```
+
+---
+
+| Command | Description |
+|---------|-------------|
+| `git restore` | Restores files by discarding uncommitted changes, unstaging files, recovering deleted files, or restoring files from another commit or branch. |
+
+**Syntax:**
+```bash
+# Discard all uncommitted changes
+git restore .
+
+# Unstage a file
+git restore --staged filename.txt
+
+# Discard changes in a specific file
+git restore filename.txt
+
+# Restore a file from a specific commit or branch
+git restore --source=<commit_hash_or_branch> filename.txt
+```
