@@ -14,3 +14,7 @@ git restore     - To discard uncommitted changes in all files/specific file, uns
     git restore --staged filename.txt
     git restore filename.txt
     git restore --source=<commit_hash_or_branch> filename.txt
+
+git commit      - To saves changes locally on your own machine.
+  cmd :
+    git commit
