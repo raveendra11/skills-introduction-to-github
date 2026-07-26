@@ -51,5 +51,6 @@ git restore --source=<commit_hash_or_branch> filename.txt
 **Syntax:**
 ```bash
 git commit
+git commit -m "here is your message."
 
 ```
