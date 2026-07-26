@@ -54,3 +54,15 @@ git commit
 git commit -m "here is your message."
 
 ```
+
+---
+
+| Command | Description |
+|---------|-------------|
+| `git branch` | To see which branch currenlty you are in. |
+
+**Syntax:**
+```bash
+git branch
+
+```
