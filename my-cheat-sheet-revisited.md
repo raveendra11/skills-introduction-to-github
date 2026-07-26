@@ -41,3 +41,15 @@ git restore filename.txt
 # Restore a file from a specific commit or branch
 git restore --source=<commit_hash_or_branch> filename.txt
 ```
+
+---
+
+| Command | Description |
+|---------|-------------|
+| `git commit` | To saves changes locally on your own machine. |
+
+**Syntax:**
+```bash
+git commit
+
+```
