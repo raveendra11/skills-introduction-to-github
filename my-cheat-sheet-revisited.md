@@ -66,3 +66,23 @@ git commit -m "here is your message."
 git branch
 
 ```
+---
+
+| Command | Description |
+|---------|-------------|
+| `git log` | Displays the commit history of the current branch, showing commit IDs, authors, dates, and commit messages. |
+
+**Syntax:**
+```bash
+# Show complete commit history
+git log
+
+# Show each commit in a single line
+git log --oneline
+
+# Show the last 5 commits
+git log -5
+
+# Show commit history with a graph
+git log --oneline --graph --all
+```
