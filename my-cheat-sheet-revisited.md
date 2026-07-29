@@ -86,3 +86,34 @@ git log -5
 # Show commit history with a graph
 git log --oneline --graph --all
 ```
+---
+
+## Git Commands
+
+| Command | Description |
+|---------|-------------|
+| `git stash` | Temporarily saves your uncommitted changes without committing them, allowing you to switch branches or work on something else. |
+
+**Syntax:**
+```bash
+# Stash all tracked changes
+git stash
+
+# Stash changes with a message
+git stash push -m "Work in progress"
+
+# List all stashes
+git stash list
+
+# Apply the latest stash (keep it in the stash list)
+git stash apply
+
+# Apply and remove the latest stash
+git stash pop
+
+# Remove the latest stash
+git stash drop
+
+# Clear all stashes
+git stash clear
+```
