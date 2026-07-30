@@ -88,8 +88,6 @@ git log --oneline --graph --all
 ```
 ---
 
-## Git Commands
-
 | Command | Description |
 |---------|-------------|
 | `git stash` | Temporarily saves your uncommitted changes without committing them, allowing you to switch branches or work on something else. |
@@ -116,4 +114,27 @@ git stash drop
 
 # Clear all stashes
 git stash clear
+```
+---
+
+| Command | Description |
+|---------|-------------|
+| `git diff` | Shows the differences between files in your working directory, staging area, commits, or branches. Useful for reviewing changes before committing. |
+
+**Syntax:**
+```bash
+# Show unstaged changes
+git diff
+
+# Show staged changes
+git diff --staged
+
+# Compare two commits
+git diff <commit1> <commit2>
+
+# Compare two branches
+git diff <branch1> <branch2>
+
+# Show changes for a specific file
+git diff <file>
 ```
