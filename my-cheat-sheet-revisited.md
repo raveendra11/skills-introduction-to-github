@@ -138,3 +138,25 @@ git diff <branch1> <branch2>
 # Show changes for a specific file
 git diff <file>
 ```
+
+| Command | Description |
+|---------|-------------|
+| `git checkout` | Switches between branches or restores files from a specific commit or branch. It can also be used to create and switch to a new branch. *(Note: For newer Git versions, `git switch` and `git restore` are recommended for these tasks.)* |
+
+**Syntax:**
+```bash
+# Switch to an existing branch
+git checkout <branch-name>
+
+# Create and switch to a new branch
+git checkout -b <new-branch>
+
+# Restore a specific file from the latest commit
+git checkout -- <file>
+
+# Restore a file from a specific commit
+git checkout <commit> -- <file>
+
+# Switch to a specific commit (detached HEAD)
+git checkout <commit>
+```
