@@ -180,3 +180,25 @@ git revert <oldest-commit>^..<latest-commit>
 # Revert a commit without editing the commit message
 git revert --no-edit <commit-hash>
 ```
+---
+| Command | Description |
+|---------|-------------|
+| `git cherry-pick` | Applies the changes from a specific commit onto your current branch without merging the entire branch. It is useful for selectively applying commits. |
+
+**Syntax:**
+```bash
+# Apply a specific commit to the current branch
+git cherry-pick <commit-hash>
+
+# Apply multiple commits
+git cherry-pick <commit1> <commit2>
+
+# Apply a range of commits
+git cherry-pick <start-commit>^..<end-commit>
+
+# Continue after resolving conflicts
+git cherry-pick --continue
+
+# Abort the cherry-pick operation
+git cherry-pick --abort
+```
