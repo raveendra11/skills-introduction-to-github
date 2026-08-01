@@ -160,3 +160,23 @@ git checkout <commit> -- <file>
 # Switch to a specific commit (detached HEAD)
 git checkout <commit>
 ```
+---
+
+| Command | Description |
+|---------|-------------|
+| `git revert` | Reverts the changes introduced by a specific commit by creating a new commit. Unlike `git reset`, it does not remove commit history, making it safe for shared repositories. |
+
+**Syntax:**
+```bash
+# Revert a specific commit
+git revert <commit-hash>
+
+# Revert the latest commit
+git revert HEAD
+
+# Revert multiple commits
+git revert <oldest-commit>^..<latest-commit>
+
+# Revert a commit without editing the commit message
+git revert --no-edit <commit-hash>
+```
