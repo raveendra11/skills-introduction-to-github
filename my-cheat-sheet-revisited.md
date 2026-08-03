@@ -202,3 +202,22 @@ git cherry-pick --continue
 # Abort the cherry-pick operation
 git cherry-pick --abort
 ```
+---
+| Command | Description |
+|---------|-------------|
+| `git reflog` | Shows a log of where your `HEAD` and branch references have been. It is useful for recovering lost commits, undoing accidental resets, or finding commits that are no longer referenced by a branch. |
+
+**Syntax:**
+```bash
+# Show the reflog
+git reflog
+
+# View the reflog for a specific branch
+git reflog <branch-name>
+
+# Recover a previous state using a reflog entry
+git reset --hard HEAD@{2}
+
+# Create a new branch from a previous reflog entry
+git checkout -b recovered-branch HEAD@{3}
+```
