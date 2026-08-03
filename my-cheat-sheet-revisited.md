@@ -221,3 +221,29 @@ git reset --hard HEAD@{2}
 # Create a new branch from a previous reflog entry
 git checkout -b recovered-branch HEAD@{3}
 ```
+---
+
+| Command | Description |
+|---------|-------------|
+| `git reset` | Moves the current branch to a previous commit. It can also unstage files or discard commits and changes depending on the option used. **Use `--hard` with caution**, as it permanently removes uncommitted changes. |
+
+**Syntax:**
+```bash
+# Unstage a specific file
+git reset <file>
+
+# Unstage all staged files
+git reset
+
+# Undo the last commit (keep changes staged)
+git reset --soft HEAD~1
+
+# Undo the last commit (keep changes unstaged)
+git reset --mixed HEAD~1
+
+# Undo the last commit and discard all changes
+git reset --hard HEAD~1
+
+# Reset to a specific commit
+git reset --hard <commit-hash>
+```
