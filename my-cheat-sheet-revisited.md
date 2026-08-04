@@ -247,3 +247,26 @@ git reset --hard HEAD~1
 # Reset to a specific commit
 git reset --hard <commit-hash>
 ```
+---
+
+| Command | Description |
+|---------|-------------|
+| `git merge` | Combines changes from one branch into the current branch. It is commonly used to integrate feature branches into the main branch. |
+
+**Syntax:**
+```bash
+# Merge a branch into the current branch
+git merge <branch-name>
+
+# Merge with a custom commit message
+git merge <branch-name> -m "Merge feature branch"
+
+# Abort a merge if conflicts occur
+git merge --abort
+
+# Perform a fast-forward merge (when possible)
+git merge --ff <branch-name>
+
+# Create a merge commit even if a fast-forward is possible
+git merge --no-ff <branch-name>
+```
