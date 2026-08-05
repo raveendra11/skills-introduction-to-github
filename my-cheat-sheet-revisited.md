@@ -270,3 +270,27 @@ git merge --ff <branch-name>
 # Create a merge commit even if a fast-forward is possible
 git merge --no-ff <branch-name>
 ```
+
+---
+
+| Command | Description |
+|---------|-------------|
+| `git fetch` | Downloads the latest commits, branches, and tags from a remote repository without merging them into your current branch. It allows you to review changes before integrating them. |
+
+**Syntax:**
+```bash
+# Fetch changes from the default remote (origin)
+git fetch
+
+# Fetch changes from a specific remote
+git fetch <remote-name>
+
+# Fetch a specific branch
+git fetch <remote-name> <branch-name>
+
+# Fetch all remotes
+git fetch --all
+
+# Fetch all branches and remove deleted remote-tracking branches
+git fetch --all --prune
+```
