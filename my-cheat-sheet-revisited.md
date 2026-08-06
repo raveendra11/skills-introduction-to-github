@@ -294,3 +294,26 @@ git fetch --all
 # Fetch all branches and remove deleted remote-tracking branches
 git fetch --all --prune
 ```
+---
+
+| Command | Description |
+|---------|-------------|
+| `git pull` | Fetches the latest changes from a remote repository and merges them into the current branch. It is equivalent to running `git fetch` followed by `git merge`. |
+
+**Syntax:**
+```bash
+# Pull changes from the default remote (origin)
+git pull
+
+# Pull changes from a specific remote and branch
+git pull <remote-name> <branch-name>
+
+# Pull using rebase instead of merge
+git pull --rebase
+
+# Pull all updates from the remote
+git pull --all
+
+# Pull and automatically create a tracking branch
+git pull --set-upstream <remote-name> <branch-name>
+```
