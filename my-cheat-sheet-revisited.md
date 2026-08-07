@@ -317,3 +317,30 @@ git pull --all
 # Pull and automatically create a tracking branch
 git pull --set-upstream <remote-name> <branch-name>
 ```
+
+---
+
+| Command | Description |
+|---------|-------------|
+| `git remote` | Manages remote repositories. It allows you to view, add, rename, remove, and update remote repository connections such as `origin`. |
+
+**Syntax:**
+```bash
+# List all remote repositories
+git remote -v
+
+# Add a new remote repository
+git remote add <remote-name> <repository-url>
+
+# Rename a remote
+git remote rename <old-name> <new-name>
+
+# Remove a remote
+git remote remove <remote-name>
+
+# Show information about a remote
+git remote show <remote-name>
+
+# Change the URL of an existing remote
+git remote set-url <remote-name> <new-repository-url>
+```
