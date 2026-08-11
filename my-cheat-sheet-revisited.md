@@ -344,3 +344,44 @@ git remote show <remote-name>
 # Change the URL of an existing remote
 git remote set-url <remote-name> <new-repository-url>
 ```
+---
+
+| Command | Description |
+|---------|-------------|
+| `git stash` | Saves uncommitted changes (staged and unstaged) to a stack and reverts the working directory to match HEAD. It is equivalent to running `git stash push`. |
+
+**Syntax:**
+```bash
+# Stash current changes with default message
+git stash
+
+# Stash with a descriptive message
+git stash push -m "description"
+
+# Stash including untracked files
+git stash push -u
+
+# Stash only staged changes
+git stash push --staged
+
+# List all saved stashes
+git stash list
+
+# Apply the most recent stash and keep it on the stack
+git stash apply [stash@{n}]
+
+# Apply the most recent stash and remove it from the stack
+git stash pop [stash@{n}]
+
+# Show diff of a specific stash
+git stash show -p [stash@{n}]
+
+# Create a new branch from a stash
+git stash branch <branch-name> [stash@{n}]
+
+# Delete a specific stash
+git stash drop stash@{n}
+
+# Delete all stashes
+git stash clear
+```
