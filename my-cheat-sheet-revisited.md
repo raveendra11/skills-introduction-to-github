@@ -418,3 +418,20 @@ git push origin --tags
 
 # Delete a remote tag
 git push origin --delete v1.0.0
+
+---
+
+| Command | Description |
+|---------|-------------|
+| `git clone` | Creates a local copy of a remote Git repository. |
+
+**Syntax:**
+```bash
+# Clone a repository
+git clone <repository-url>
+
+# Clone a repository into a specific directory
+git clone <repository-url> <directory-name>
+
+# Clone a specific branch
+git clone -b <branch-name> <repository-url>
