@@ -384,4 +384,37 @@ git stash drop stash@{n}
 
 # Delete all stashes
 git stash clear
+
+---
+
 ```
+| Command   | Description                                                                                                                                          |
+| --------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `git tag` | Creates, lists, and manages tags used to mark specific points in Git history, such as software releases or important versions. |
+
+**Syntax:**
+
+```bash
+# List all tags
+git tag
+
+# Create a lightweight tag
+git tag v1.0.0
+
+# Create an annotated tag
+git tag -a v1.0.0 -m "Version 1.0.0"
+
+# Show information about a tag
+git show v1.0.0
+
+# Delete a local tag
+git tag -d v1.0.0
+
+# Push a specific tag to the remote repository
+git push origin v1.0.0
+
+# Push all tags to the remote repository
+git push origin --tags
+
+# Delete a remote tag
+git push origin --delete v1.0.0
