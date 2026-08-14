@@ -435,3 +435,29 @@ git clone <repository-url> <directory-name>
 
 # Clone a specific branch
 git clone -b <branch-name> <repository-url>
+
+---
+
+| Command | Description |
+|---------|-------------|
+| `git push` | Uploads local commits to a remote repository, allowing others to access the latest changes. |
+
+**Syntax:**
+```bash
+# Push the current branch to the remote repository
+git push
+
+# Push a specific branch to the remote repository
+git push <remote-name> <branch-name>
+
+# Push and set the upstream branch
+git push -u <remote-name> <branch-name>
+
+# Push all local branches
+git push --all
+
+# Push all tags
+git push --tags
+
+# Delete a remote branch
+git push <remote-name> --delete <branch-name>
