@@ -461,3 +461,29 @@ git push --tags
 
 # Delete a remote branch
 git push <remote-name> --delete <branch-name>
+
+---
+
+| Command | Description |
+|---------|-------------|
+| `git rebase` | Reapplies commits from one branch on top of another branch, creating a cleaner and more linear Git history. |
+
+**Syntax:**
+```bash
+# Rebase the current branch onto another branch
+git rebase <branch-name>
+
+# Rebase onto the latest main branch
+git rebase main
+
+# Continue a rebase after resolving conflicts
+git rebase --continue
+
+# Abort the rebase
+git rebase --abort
+
+# Skip the current commit during a rebase
+git rebase --skip
+
+# Start an interactive rebase for the last 3 commits
+git rebase -i HEAD~3
