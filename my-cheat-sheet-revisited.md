@@ -487,3 +487,27 @@ git rebase --skip
 
 # Start an interactive rebase for the last 3 commits
 git rebase -i HEAD~3
+
+---
+
+| Command | Description |
+|---------|-------------|
+| `git bisect` | Uses binary search to find the commit that introduced a bug by testing different commits between a known good and bad state. |
+
+**Syntax:**
+```bash
+# Start a bisect session
+git bisect start
+
+# Mark the current commit as bad
+git bisect bad
+
+# Mark a known good commit
+git bisect good <commit-hash>
+
+# After testing, mark the current commit
+git bisect good
+git bisect bad
+
+# End the bisect session
+git bisect reset
