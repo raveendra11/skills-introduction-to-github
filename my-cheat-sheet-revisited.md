@@ -387,8 +387,8 @@ git stash clear
 
 ---
 
-**| Command | Description |**
-| --------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Command | Description |
+|---------|-------------|
 | `git tag` | Creates, lists, and manages tags used to mark specific points in Git history, such as software releases or important versions. |
 
 **Syntax:**
