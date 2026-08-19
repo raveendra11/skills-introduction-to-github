@@ -533,3 +533,22 @@ git show <commit-hash> -- <filename>
 # Show the latest commit in one line
 git show --oneline HEAD
 ```
+---
+| Command | Description |
+|---------|-------------|
+| `git clean` | Removes untracked files and directories from the working directory. |
+
+**Syntax:**
+```bash
+# Show untracked files that would be removed
+git clean -n
+
+# Remove untracked files
+git clean -f
+
+# Remove untracked files and directories
+git clean -fd
+
+# Remove untracked and ignored files
+git clean -fdx
+```
