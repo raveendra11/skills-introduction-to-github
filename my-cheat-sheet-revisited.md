@@ -511,3 +511,25 @@ git bisect bad
 # End the bisect session
 git bisect reset
 ```
+---
+| Command | Description |
+|---------|-------------|
+| `git show` | Displays detailed information about a specific commit, including its commit message, author, date, and changes made. |
+
+**Syntax:**
+```bash
+# Show the latest commit
+git show
+
+# Show a specific commit
+git show <commit-hash>
+
+# Show only the commit statistics
+git show --stat <commit-hash>
+
+# Show changes for a specific file in a commit
+git show <commit-hash> -- <filename>
+
+# Show the latest commit in one line
+git show --oneline HEAD
+```
