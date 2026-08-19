@@ -384,7 +384,7 @@ git stash drop stash@{n}
 
 # Delete all stashes
 git stash clear
-
+```
 ---
 
 | Command | Description |
@@ -417,7 +417,7 @@ git push origin --tags
 
 # Delete a remote tag
 git push origin --delete v1.0.0
-
+```
 ---
 
 | Command | Description |
@@ -460,7 +460,7 @@ git push --tags
 
 # Delete a remote branch
 git push <remote-name> --delete <branch-name>
-
+```
 ---
 
 | Command | Description |
@@ -510,3 +510,4 @@ git bisect bad
 
 # End the bisect session
 git bisect reset
+```
