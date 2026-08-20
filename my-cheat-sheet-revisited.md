@@ -552,3 +552,22 @@ git clean -fd
 # Remove untracked and ignored files
 git clean -fdx
 ```
+---
+| Command | Description |
+|---------|-------------|
+| `git blame` | Shows who last modified each line of a file, along with the commit information and author details. |
+
+**Syntax:**
+```bash
+# Show who last modified each line of a file
+git blame <filename>
+
+# Show line numbers
+git blame -n <filename>
+
+# Ignore whitespace changes
+git blame -w <filename>
+
+# Show information for a specific range of lines
+git blame -L 10,20 <filename>
+```
