@@ -571,3 +571,25 @@ git blame -w <filename>
 # Show information for a specific range of lines
 git blame -L 10,20 <filename>
 ```
+---
+| Command | Description |
+|---------|-------------|
+| `git config` | Configures Git settings, such as your username, email address, editor, and other preferences. |
+
+**Syntax:**
+```bash
+# View all Git configuration settings
+git config --list
+
+# Set your global username
+git config --global user.name "Your Name"
+
+# Set your global email address
+git config --global user.email "your.email@example.com"
+
+# View a specific configuration value
+git config user.name
+
+# Set the default text editor
+git config --global core.editor "code"
+```
