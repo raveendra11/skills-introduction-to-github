@@ -593,3 +593,19 @@ git config user.name
 # Set the default text editor
 git config --global core.editor "code"
 ```
+---
+| Command | Description |
+|---------|-------------|
+| `git switch` | Switches between branches or creates and switches to a new branch. |
+
+**Syntax:**
+```bash
+# Switch to an existing branch
+git switch <branch-name>
+
+# Create and switch to a new branch
+git switch -c <new-branch-name>
+
+# Switch back to the previous branch
+git switch -
+```
