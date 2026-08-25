@@ -2,6 +2,22 @@
 
 | Command | Description |
 |---------|-------------|
+| `git init` | Initializes a new Git repository in the current directory. |
+
+**Syntax:**
+```bash
+# Initialize a new Git repository
+git init
+
+# Initialize a repository with a specific branch name
+git init -b main
+
+# Initialize a bare repository
+git init --bare
+```
+---
+| Command | Description |
+|---------|-------------|
 | `git status` | Displays the current branch, modified files, staged files, and untracked files. |
 
 **Syntax:**
