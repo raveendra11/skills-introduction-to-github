@@ -642,3 +642,23 @@ git mv file.txt folder/
 # Move and rename a file
 git mv old-folder/file.txt new-folder/new-file.txt
 ```
+---
+
+| Command | Description |
+|---------|-------------|
+| `git grep` | Searches for a specific pattern or text in files tracked by Git. |
+
+**Syntax:**
+```bash
+# Search for a word in tracked files
+git grep "search-text"
+
+# Search with line numbers
+git grep -n "search-text"
+
+# Search only in a specific file
+git grep "search-text" -- filename.txt
+
+# Search using a case-insensitive match
+git grep -i "search-text"
+```
