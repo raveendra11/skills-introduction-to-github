@@ -625,3 +625,20 @@ git switch -c <new-branch-name>
 # Switch back to the previous branch
 git switch -
 ```
+---
+
+| Command | Description |
+|---------|-------------|
+| `git mv` | Moves or renames a file and automatically stages the change for the next commit. |
+
+**Syntax:**
+```bash
+# Rename a file
+git mv old-file.txt new-file.txt
+
+# Move a file to another directory
+git mv file.txt folder/
+
+# Move and rename a file
+git mv old-folder/file.txt new-folder/new-file.txt
+```
